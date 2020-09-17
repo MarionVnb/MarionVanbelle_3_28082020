@@ -1,0 +1,21 @@
+footer
+{background-color: #353535;
+    padding-bottom: 30px;
+}
+
+    footer ul , footer li
+    {
+    list-style: none;
+    color:$white;
+    padding-inline-start: 0px;
+    text-decoration: none;
+    font-size:1em;
+    font-family: robotoregular;
+    text-align:left;
+    margin-left: 10px;}
+
+    footer i 
+    {padding-right: 5px;}
+
+    footer a 
+    {color:$white;}

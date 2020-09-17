@@ -3,71 +3,100 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Menu-La Palette du Goût</title>
-	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 	<script src="https://kit.fontawesome.com/87bfeec2f5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
 	<header>
-	 <a href="index.html" > <i class="fas fa-arrow-left"></i></a>
-	<img src="images/logo/ohmyfood.png" alt="logo ohmyfood">
+	 <a href="index.html" > <i class="fas fa-arrow-left fa-lg"></i></a>
+	<h1>ohmyfood</h1>
 	</header>
-	<div>
-		<img src="images/restaurants/full_palette.jpg" alt="plat La Palette du Goût" >
-	</div>
-	<h2>La Palette du Goût <i class="far fa-heart"></i></h2>
-	<h3>ENTRÉES</h3>
-		<ul>
-			<li class="plat"><h4>Escargots</h4><p>With southern French Spices</p></li>
-			<li class="price">25€</li>
-		</ul>
-		<ul>
-			<li class="plat"><h4>Foie gras de canard</h4><p>With black truffle shavings</p></li>
-			<li class="price">35€</li>
-		</ul>
-		<ul>
-			<li class="plat"><h4>Fried egg</h4><p>...</p></li>
-			<li class="price">20€</li>
-		</ul>
 
-	<h3>PLATS PRINCIPAUX</h3>
-		<ul>
-			<li class="plat"><h4>Herb-Encrusted Steak</h4><p>With delicately sliced and seasoned vegetables</p></li>
-			<li class="price">40€</li>
-		</ul>
-		<ul>
-			<li class="plat"><h4>Ox Tail Shepard's Pie</h4><p>With black truffle and pureed parsnips</p></li>
-			<li class="price">35€</li>
-		</ul>
-		<ul>
-			<li class="plat"><h4>Filet 	de sole</h4><p>With citrus dressing</p></li>
-			<li class="price">44€</li>
-		</ul>
-	<h3>DESSERTS</h3>
-	<ul>
-		<li class="plat"> <h4>Paris-Brest</h4><p>revisited</p></li>
-		<li class="price">18€</li>
-	</ul>
-	<ul>
-		<li class="plat"><h4>Chocolate Macaroons</h4><p>With vanilla ice cream</p></li>
-		<li class="price">22€</li>
-	</ul>
-	<ul>
-		<li class="plat"><h4>Chocolate Mousse</h4><p>With spices and black truffle</p></li>
-		<li class="price">23€</li>
-	</ul>
+		
+		<img class="menu-img image-background" src="images/restaurants/palette.jpg" alt="plat La Palette du Goût" >
+	
 
-	<button>Commander</button>
+		<div class="contain">
+			
+			<div class="contain">
+				<ul class="contain__title">
+				<li><h1 >La Palette du Goût</h1></li>
+				<li><i class="far fa-heart fa-lg coeur"></i></li>
+				</ul>
+			<h4><span class="trait">ENTR</span>ÉES</h4>
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li><h3>Escargots</h3></li>
+				<li class="description"><p>With southern French Spices</p></li>
+				<li class="price">25€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Foie gras de canard</h3></li>
+				<li class="description"><p>With black truffle shavings</p></li>
+				<li class="price">35€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Fried egg</h3></li>
+				<li class="description"><p>...</p></li>
+				<li class="price">20€</li>
+			</ul>
+
+			<h4><span class="trait">PLATS</span> PRINCIPAUX</h4>
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Herb-Encrusted Steak</h3></li>
+				<li class="description"><p>With delicately sliced and seasoned vegetables</p></li>
+				<li class="price">40€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Ox Tail Shepard's Pie</h3></li>
+				<li class="description"><p>With black truffle and pureed parsnips</p></li>
+				<li class="price">35€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Filet 	de sole</h3></li>
+				<li class="description"><p>With citrus dressing</p></li>
+				<li class="price">44€</li>
+			</ul>
+
+			<h4><span class="trait">DESS</span>ERTS</h4>
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+			<li class="plat"> <h3>Paris-Brest</h3></li>
+			<li class="description"><p>Revisited</p></li>
+			<li class="price">18€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Chocolate Macaroons</h3></li>
+				<li class="description"><p>With vanilla ice cream</p></li>
+				<li class="price">22€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Chocolate Mousse</h3></li>
+				<li class="description"><p>With spices and black truffle</p></li>
+				<li class="price">23€</li>
+			</ul>
+
+			<button class="btn">Commander</button>
+		</div>
+	
 
 	<footer>
 		<h5>ohmyfood</h5>
 		<ul>
-		<li> <i class="fas fa-utensils"></i>Suggest a restaurant</li>
-		<li> <i class="fas fa-hands-helping"></i>Become a partner</li>
-		<li>Legal</li>
-		<li><a href="mailto:vanbellemarion@gmail.com">Contact</a></li>
-	</ul>
+			<li> <i class="fas fa-utensils fa-xs"></i>Proposer un restaurant</li>
+			<li> <i class="fas fa-hands-helping fa-xs"></i>Devenir partenaire</li>
+			<li>Mentions légales</li>
+			<li><a href="mailto:vanbellemarion@gmail.com">Contact</a></li>
+		</ul>
 	</footer>
 
 </body>
-	</html>
+</html>

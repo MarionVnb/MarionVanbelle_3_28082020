@@ -3,75 +3,100 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Menu-À la Française</title>
-	<link rel="stylesheet" href="style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu-Bastille</title>
+	<link rel="stylesheet" href="css/style.css"/>
 	<script src="https://kit.fontawesome.com/87bfeec2f5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
 	<header>
-	 	<a href="index.html" > <i class="fas fa-arrow-left"></i></a>
-			<h1>ohmyfood</h1>
+	 <a href="index.html" > <i class="fas fa-arrow-left fa-lg"></i></a>
+	<h1>ohmyfood</h1>
 	</header>
 
-		<div>
-			<img src="images/restaurants/a-la-francaise.jpg" alt="plat À la Française" >
-		</div>
-			<h4>À la Française <i class="far fa-heart"></i></h4>
-			<p>ENTRÉES</p>
-				<ul>
-					<li class="plat"><h6>Citrus Squid Carpaccio</h6><p>With orange zest</p></li>
-					<li class="price">25€</li>
-				</ul>
-				<ul>
-					<li class="plat"><h6>Grandmother's vegetable Soup</h6><p>Carrots, parsnips, Jerusalem artichoke</p></li>
-					<li class="price">35€</li>
-				</ul>
-				<ul>
-					<li class="plat"><h6>Onion Soup</h6><p>revisited</p></li>
-					<li class="price">20€</li>
-				</ul>
+		
+		<img class="menu-img image-background" src="images/restaurants/francaise.jpg" alt="plat Bastille">
+	
+
+		<div class="contain">
 			
-
-			<p>PLATS PRINCIPAUX</p>
-				<ul>
-					<li class="plat"><h4>Scallops</h4><p>With mashed parsnip</p></li>
-					<li class="price">40€</li>
-				</ul>
-				<ul>
-					<li class="plat"><h4>Magret de Canard</h4><p>With mashed potatoes</p></li>
-					<li class="price">35€</li>
-				</ul>
-				<ul>
-					<li class="plat"><h4>Game Hen</h4><p>With vegetable gnocchis</p></li>
-					<li class="price">44€</li>
+			<div class="contain contain--topposition">
+				<ul class="contain__title">
+				<li><h1 >Bastille</h1></li>
+				<li><i class="far fa-heart fa-lg coeur"></i></li>
 				</ul>
 
-			<p>DESSERTS</p>
-			<ul>
-				<li class="plat"> <h6>Ice Cream floral</h6><p>With hazelnut butter</p></li>
-				<li class="price">18€</li>
+			<h4><span class="trait">ENTR</span>ÉES</h4>
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li><h3>Citrus Squid Carpaccio</h3></li>
+				<li class="description"><p>With orange zest</p></li>
+				<li class="price">25€</li>
 			</ul>
-			<ul>
-				<li class="plat"><h6>Chocolate Lava Cake</h6><p>Revisited</p></li>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Grandmother's Vegetable Soup</h3></li>
+				<li class="description"><p>Carrots, parsnips, Jerusalem artichoke</p></li>
+				<li class="price">35€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Onion Soup</h3></li>
+				<li class="description"><p>Revisited</p></li>
+				<li class="price">20€</li>
+			</ul>
+
+			<h4><span class="trait">PLATS</span> PRINCIPAUX</h4>
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Scallops</h3></li>
+				<li class="description"><p>With mashed parsnip</p></li>
+				<li class="price">40€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Magret de canard</h3></li>
+				<li class="description"><p>With mashed potatoes</p></li>
+				<li class="price">35€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Game Hen</h3></li>
+				<li class="description"><p>With vegetable gnocchis</p></li>
+				<li class="price">44€</li>
+			</ul>
+
+			<h4><span class="trait">DESS</span>ERTS</h4>
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+			<li class="plat"> <h3>Floral Ice Cream</h3></li>
+			<li class="description"><p>With hazelnut butter</p></li>
+			<li class="price">18€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Chocolate Lava Cake</h3></li>
+				<li class="description"><p>Revisited</p></li>
 				<li class="price">22€</li>
 			</ul>
-			<ul>
-				<li class="plat"><h6>Napoleon</h6><p>With blueberries and marzipan</p></li>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Napoleon</h3></li>
+				<li class="description"><p>With blueberries and marzipan</p></li>
 				<li class="price">23€</li>
 			</ul>
 
-			<button>Commander</button>
+			<button class="btn">Commander</button>
+		</div>
 
-			<footer>
-				<h5>ohmyfood</h5>
-				<ul>
-				<li> <i class="fas fa-utensils"></i>Suggest a restaurant</li>
-				<li> <i class="fas fa-hands-helping"></i>Become a partner</li>
-				<li>Legal</li>
-				<li><a href="mailto:vanbellemarion@gmail.com">Contact</a></li>
-			</ul>
-			</footer>
-
+	<footer>
+		<h5>ohmyfood</h5>
+		<ul>
+			<li> <i class="fas fa-utensils fa-xs"></i>Proposer un restaurant</li>
+			<li> <i class="fas fa-hands-helping fa-xs"></i>Devenir partenaire</li>
+			<li>Mentions légales</li>
+			<li><a href="mailto:vanbellemarion@gmail.com">Contact</a></li>
+		</ul>
+	</footer>
 
 </body>
-	</html>
+</html>

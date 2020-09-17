@@ -3,74 +3,99 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Menu-Le Délice des Sens</title>
-	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 	<script src="https://kit.fontawesome.com/87bfeec2f5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
 	<header>
-	 <a href="index.html" > <i class="fas fa-arrow-left"></i></a>
-	<img src="images/logo/ohmyfood.png" alt="logo ohmyfood">
+	 <a href="index.html" > <i class="fas fa-arrow-left fa-lg"></i></a>
+	<h1>ohmyfood</h1>
 	</header>
-	<div>
-			<img src="images/restaurants/le_gourmand.jpg" alt="plat Le Délice des Sens" >
-		</div>
-			<h2>Le Délice des Sens <i class="far fa-heart"></i></h2>
-			<h3>ENTRÉES</h3>
-				<ul>
-					<li class="plat"><h4>Carpaccio de Thon</h4><p>Seasoned with yuzu</p></li>
-					<li class="price">25€</li>
-				</ul>
-				<ul>
-					<li class="plat"><h4>Crunchy Lobster Croquets</h4><p>With seasonal vegetables</p></li>
-					<li class="price">35€</li>
-				</ul>
-				<ul>
-					<li class="plat"><h4>Mushroom Soup</h4><p>With truffles</p></li>
-					<li class="price">20€</li>
-				</ul>
+
+		
+		<img class="menu-img image-background" src="images/restaurants/sens.jpg" alt="plat Le Délice des Sens" >
+	
+
+		<div class="contain">
 			
-
-			<h3>PLATS PRINCIPAUX</h3>
-				<ul>
-					<li class="plat"><h4>Poulet rôti aux herbes de Provence</h4><p>With truffle cream</p></li>
-					<li class="price">40€</li>
-				</ul>
-				<ul>
-					<li class="plat"><h4>Roasted Lobster</h4><p>With seasonal vegetables</p></li>
-					<li class="price">35€</li>
-				</ul>
-				<ul>
-					<li class="plat"><h4>Angust Beef Ribs</h4><p>With mashed parshnips</p></li>
-					<li class="price">44€</li>
+				<ul class="contain__title">
+				<li><h1 >Le Délice des Sens</h1></li>
+				<li><i class="far fa-heart fa-lg coeur"></i></li>
 				</ul>
 
-			<h3>DESSERTS</h3>
-			<ul>
-				<li class="plat"> <h4>Assorted Dessert Plate</h4><p>Selon l'humeur du chef</p></li>
-				<li class="price">18€</li>
+			<h4><span class="trait">ENTR</span>ÉES</h4>
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li><h3>Tuna Carpaccio</h3></li>
+				<li class="description"><p>Seasoned with yuzu</p></li>
+				<li class="price">25€</li>
 			</ul>
-			<ul>
-				<li class="plat"><h4>Crème brulée</h4><p>Revisitée</p></li>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Crunchy Lobster Croquets</h3></li>
+				<li class="description"><p>With seasonal vegetables</p></li>
+				<li class="price">35€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Mushroom Soup</h3></li>
+				<li class="description"><p>With truffles</p></li>
+				<li class="price">20€</li>
+			</ul>
+
+			<h4><span class="trait">PLATS</span> PRINCIPAUX</h4>
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Roast Chicken with Provincal Herbs</h3></li>
+				<li class="description"><p>With truffle cream</p></li>
+				<li class="price">40€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Roasted Lobster</h3></li>
+				<li class="description"><p>With seasonal vegetables</p></li>
+				<li class="price">35€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Angust Beef Ribs</h3></li>
+				<li class="description"><p>With mashed parshnips</p></li>
+				<li class="price">44€</li>
+			</ul>
+
+			<h4><span class="trait">DESS</span>ERTS</h4>
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+			<li class="plat"> <h3>Assorted Dessert Plate</h3></li>
+			<li class="description"><p>Chef's choice</p></li>
+			<li class="price">18€</li>
+			</ul>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Crème brulée</h3></li>
+				<li class="description"><p>Revisited</p></li>
 				<li class="price">22€</li>
 			</ul>
-			<ul>
-				<li class="plat"><h4>Tiramisu</h4><p>With hazelnuts</p></li>
+
+			<ul class="container_resto_prev__list container_resto_prev__list--background page-menu-responsive">
+				<li class="plat"><h3>Tiramisu</h3></li>
+				<li class="description"><p>With hazelnuts</p></li>
 				<li class="price">23€</li>
 			</ul>
 
-			<button>Commander</button>
+			<button class="btn">Commander</button>
+		</div>
 
-			<footer>
-				<h5>ohmyfood</h5>
-				<ul>
-				<li> <i class="fas fa-utensils"></i>Suggest a restaurant</li>
-				<li> <i class="fas fa-hands-helping"></i>Become a partner</li>
-				<li>Legal</li>
-				<li><a href="mailto:vanbellemarion@gmail.com">Contact</a></li>
-			</ul>
-			</footer>
-
+	<footer>
+		<h5>ohmyfood</h5>
+		<ul>
+			<li> <i class="fas fa-utensils fa-xs"></i>Proposer un restaurant</li>
+			<li> <i class="fas fa-hands-helping fa-xs"></i>Devenir partenaire</li>
+			<li>Mentions légales</li>
+			<li><a href="mailto:vanbellemarion@gmail.com">Contact</a></li>
+		</ul>
+	</footer>
 
 </body>
-	</html>
+</html>

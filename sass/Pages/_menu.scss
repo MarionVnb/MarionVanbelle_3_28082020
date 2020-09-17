@@ -1,0 +1,64 @@
+.menu-img
+    {width: 100%;   
+}
+
+.contain
+{display: flex;
+flex-direction: column;
+ align-items: left;
+border-radius:50px 50px 0px 0px;
+background-color: #f3f3f3;
+position:relative;
+top:-40px;
+width: 100%;
+margin-bottom:-30px;
+}
+
+.contain--topposition
+{top:-10px;}
+
+
+
+
+.contain__title
+{margin-right:20px;
+    margin-left:-15px;
+list-style: none;
+margin-bottom:-10px;
+
+}
+
+.trait
+    {
+        margin-top:0px;
+        border-bottom: 3px solid  $tertiaire;
+        font-style: normal;
+        padding-bottom:4px;
+    }
+
+
+.price
+    {font-family: robotobold;
+    font-size:0.9em;
+position:absolute;
+right:0px;
+bottom:12px;
+margin-right:10px;
+list-style: none;}
+
+
+
+
+.container_resto_prev__list--background
+{background-color:$white;
+border-radius:20px;
+
+}
+
+.description
+{font-family:robotothin;
+font-size:0.8em;
+margin-right:5px;
+width:80%;
+margin-bottom: -10px;
+}

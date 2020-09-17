@@ -1,0 +1,36 @@
+header i 
+{position:absolute;
+left:0;
+top:0;
+color:rgb(49, 49, 49);
+margin-top:30px;
+margin-left:25px;}
+
+.circle
+{@include circle-number;}
+
+.section_localisation i 
+    {padding-right: 15px;}
+
+    .section_fonctionnement i
+        {padding-right: 15px;
+            padding-left: 25px;
+        color:rgba(128,128,128 ,1);}
+
+        .coeur
+        {float:right;
+        margin-top: -45px;
+        margin-right: 15px;
+        color:rgba(128,128,128 ,1);
+        cursor: pointer;
+            &:hover
+            {color: #9356DC;}
+        }
+
+        .coeur_plein
+        {color:linear-gradient($secondaire, $primaire);
+        display:none;}
+
+        .carre_new
+        {@include encart;
+        }

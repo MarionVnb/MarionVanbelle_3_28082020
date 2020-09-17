@@ -5,14 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ohmyfood!</title>
-	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 	<script src="https://kit.fontawesome.com/87bfeec2f5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 	<header>
-	<h1 class="header__title">ohmyfood</h1>
+	<h1>ohmyfood</h1>
 	</header>
 
 	<section class="section_localisation"> 
@@ -28,22 +28,23 @@
 	<section class="section_fonctionnement">
 		<h2>Mode d'emploi</h2>
 		<ul>
-			<li><span class="section_fonctionnement__circle">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-			<li><span class="section_fonctionnement__circle">2</span><i class="fas fa-list"></i>Composez votre menu</li>
-			<li id="section_fonctionnement--purplebackground"><span class="section_fonctionnement__circle">3</span><i class="fas fa-store" id="darkpurple"></i>Dégustez!</li>
+			<li><span class="circle">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+			<li><span class="circle">2</span><i class="fas fa-list"></i>Composez votre menu</li>
+			<li id="section_fonctionnement--purplebackground"><span class="circle">3</span><i class="fas fa-store" id="darkpurple"></i>Dégustez!</li>
 		</ul>
 	</section>
 
 	<section class="container_resto_prev">
 
 		<h2>Restaurants</h2>
-
+<aside class="container_resto_prev container_resto_prev_responsive">
 		<ul class="container_resto_prev__list">
 			<li class="carre_new">New</li>
 			<li><a href="menu_lpdg.html"><img src="images/restaurants/palette-du-gout.jpg" alt="plat La Palette du Goût" ></a></li>
 			<li><h3>La Palette du Goût</h3></li>
 			<li><p>Paris</p></li>
-			<li><i class="far fa-heart fa-lg"></i></li>
+			<li><i class="far fa-heart fa-lg coeur"></i></li>
+			<li><i class="fas fa-heart fa-lg coeur coeur_plein"></i></li>
 		</ul>
 
 		<ul class="container_resto_prev__list">
@@ -51,22 +52,23 @@
 			<li><a href="menu_lne.html"><img src="images/restaurants/note-enchantee.jpg" alt="plat La note enchantée"></a></li>
 			<li><h3>La Note Enchantée</h3></li>
 			<li><p>Paris</p></li>
-			<li><i class="far fa-heart fa-lg"></i></li>
+			<li><i class="far fa-heart fa-lg coeur"></i></li>
 		</ul>
 
 		<ul class="container_resto_prev__list">
 			<li><a href="menu_alf.html"><img src="images/restaurants/a-la-francaise.jpg" alt="plat à la Française"></a> </li>
-			<li><h3>À La Française</h3></li>
+			<li><h3>Bastille</h3></li>
 			<li><p>Paris</p></li>
-			<li><i class="far fa-heart fa-lg"></i></li>
+			<li><i class="far fa-heart fa-lg coeur"></i></li>
 			</ul>
 
 			<ul class="container_resto_prev__list">
 				<li><a href="menu_lds.html"><img src="images/restaurants/delice-des-sens.jpg" alt="plat Le Délice des Sens"></a> </li>
 				<li><h3>Le Délice des Sens</h3></li>
 				<li><p>Paris</p></li>
-				<li><i class="far fa-heart fa-lg"></i></li>
+				<li><i class="far fa-heart fa-lg coeur"></i></li>
 			</ul>
+		</aside>
 
 	</section>
 
@@ -76,7 +78,7 @@
 			<li> <i class="fas fa-utensils fa-xs"></i>Proposer un restaurant</li>
 			<li> <i class="fas fa-hands-helping fa-xs"></i>Devenir partenaire</li>
 			<li>Mentions légales</li>
-			<li><a href="mailto:vanbellemarion@gmail.com">Contact</a></li>
+			<li><a href="mailto:hello@ohmyfood.com">Contact</a></li>
 		</ul>
 	</footer>
 
