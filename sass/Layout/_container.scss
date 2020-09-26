@@ -40,6 +40,9 @@ padding-bottom:30px;
 
 .page-menu-responsive{
     @media (min-width: 768px)
-    {max-width:45%;
+    {max-width:60%;
     margin-left: 200px;
-    margin-right: 200px;}}
+    margin-right: 200px;}
+    @media (min-width:992px)
+    {margin-left:300px;
+    margin-right:300px;}}
