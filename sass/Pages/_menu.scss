@@ -32,24 +32,31 @@ margin-bottom:-10px;
         padding-bottom:4px;
     }
 
-
 .price
     {font-family: robotobold;
     font-size:0.9em;
 position:absolute;
 right:0px;
 bottom:12px;
-margin-right:10px;
-list-style: none;}
+margin-right:20px;
+} 
 
-
-
+@keyframes check
+{ 0% {width:0;}
+100% {width:65px;}}
 
 .container_resto_prev__list--background
 {background-color:$white;
 border-radius:20px;
-
-}
+&:hover {.price {transform:translateX(-70px);transition:transform 1s ease-in-out}
+        li.anim_check
+        {opacity:1;
+        animation: check 1s ease-in-out;} 
+        i {transform:rotate(-360deg);
+        transition:transform 1s ease-in-out;
+        animation-delay:0.6s;}
+        .description {text-overflow:ellipsis;}
+    }}
 
 .description
 {font-family:robotothin;
@@ -57,4 +64,29 @@ font-size:0.8em;
 margin-right:5px;
 width:80%;
 margin-bottom: -10px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+        translate:0,-10px;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.appear1
+{animation: fadein 3s ease-in-out;
+animation-delay:200ms;
+}
+
+.appear2
+{animation: fadein 3s ease-in-out;
+animation-delay:400ms;
+}
+
+.appear3
+{animation: fadein 3s ease-in-out;
+animation-delay:600ms;
 }

@@ -8,8 +8,6 @@ padding-bottom:30px;
 }
 
 
-
-
 .container_resto_prev_responsive
     {@media (min-width: 768px)
         {width:80%;
@@ -44,5 +42,6 @@ padding-bottom:30px;
     margin-left: 200px;
     margin-right: 200px;}
     @media (min-width:992px)
-    {margin-left:300px;
-    margin-right:300px;}}
+    { max-width:70%;
+        margin-left:200px;
+    margin-right:200px;}}
