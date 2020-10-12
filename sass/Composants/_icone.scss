@@ -1,4 +1,4 @@
-/*///////HOME PAGE///////*/
+/*/////// ICONES HOME PAGE///////*/
 header i 
 {position:absolute;
 left:0;
@@ -25,6 +25,8 @@ bottom:30px;
 color:rgba(128,128,128 ,1);
 cursor: pointer;
 opacity:1;}
+
+/*ANIMATION COEUR QUI SE COLORE AU SURVOL*/
 
 .coeur_plein
 {position: absolute;
@@ -105,7 +107,8 @@ opacity:0;
             }
         }
 
-/*///////PAGES MENU///////*/
+/*///////ICONES PAGES MENU///////*/
+
 .anim_check
 {color:$white;
 opacity:0;
