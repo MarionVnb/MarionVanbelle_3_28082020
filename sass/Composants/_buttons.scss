@@ -1,5 +1,7 @@
-.btn
-   {@include bouton;
-   &:hover{background:linear-gradient(lighten($secondaire,5%), lighten($primaire,5%));
-         box-shadow:-1px 4px 5px 3px rgb(156, 156, 156)}
-   }
+.btn{
+      @include bouton;
+      &:hover{
+            background:linear-gradient(lighten($secondaire,5%), lighten($primaire,5%));
+            box-shadow:-1px 4px 5px 3px rgb(156, 156, 156);
+            }
+}

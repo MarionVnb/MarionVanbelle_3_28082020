@@ -1,10 +1,9 @@
-footer
-{background-color: #353535;
+footer{
+    background-color: #353535;
     padding-bottom: 30px;
 }
 
-    footer ul , footer li
-    {
+footer ul , footer li{
     list-style: none;
     color:$white;
     padding: 0px;
@@ -12,10 +11,13 @@ footer
     font-size:1em;
     font-family: robotoregular;
     text-align:left;
-    margin-left: 10px;}
+    margin-left: 10px;
+}
 
-    footer i 
-    {padding-right: 5px;}
+footer i {
+    padding-right: 5px;
+}
 
-    footer a 
-    {color:$white;}
+footer a {
+    color:$white;
+}

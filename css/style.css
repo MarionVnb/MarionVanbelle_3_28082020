@@ -36,7 +36,15 @@ body {
 }
 @font-face {
   font-family: "Shrikhand-Regular";
-  src: url("../typo/Shrikhand/Shrikhand-Regular.eot") format("embedded-opentype");
+  src: url("../typo/Shrikhand/Shrikhand-Regular.eot");
+  src: url("../typo/Shrikhand/Shrikhand-Regular.eot?#iefix") format("embedded-opentype"), url("../typo/Shrikhand/Shrikhand-Regular.otf") format("otf"), url("../typo/Shrikhand/Shrikhand-Regular.woff") format("woff"), url("../typo/Shrikhand/Shrikhand-Regular.ttf") format("truetype"), url("../typo/Shrikhand/Shrikhand-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../fonts/fontawesome-webfont.eot #iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -59,6 +67,7 @@ h2 {
   margin-bottom: 10px;
   margin-left: 15px;
   text-align: left;
+  font-weight: normal;
 }
 
 @media (min-width: 768px) {
@@ -78,10 +87,12 @@ h2 {
 h3 {
   font-family: robotoregular;
   line-height: 0px;
+  font-weight: normal;
 }
 
 h4 {
   font-family: robotothin;
+  font-weight: normal;
   font-size: 1em;
   margin-left: 15px;
   margin-bottom: 10px;
@@ -106,31 +117,6 @@ h5 {
   font-size: 1.2em;
   margin-left: 15px;
   font-weight: lighter;
-}
-
-h6 {
-  font-family: robotoregular;
-  font-size: 1.2em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 400px;
-  text-align: left;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.description p {
-  font-family: robotothin;
-  font-size: 1.1em;
-  width: 80%;
-  margin-right: 5px;
-  margin-bottom: -10px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 /*///////PARAGRAPHES///////*/
@@ -250,61 +236,51 @@ header i {
   }
   10% {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 10%, #FFFFFF 0%);
-    -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   20% {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 20%, #FFFFFF 10%);
-    -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   30% {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 30%, #FFFFFF 20%);
-    -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   40% {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 40%, #FFFFFF 30%);
-    -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   50% {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 50%, #FFFFFF 40%);
-    -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   60% {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 60%, #FFFFFF 50%);
-    -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   70% {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 70%, #FFFFFF 60%);
-    -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   80% {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 80%, #FFFFFF 70%);
-    -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   90% {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 90%, #FFFFFF 80%);
-    -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   100% {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
-    -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -650,60 +626,82 @@ header {
   padding-bottom: 4px;
 }
 
-.price {
+/*ANIMATIONS SUR LES PAGES MENU*/
+/*ANIMATION CHECK = ICONE DE VALIDATION QUI APPARAIT AU SURVOL DU PLAT*/
+.container_resto_prev__list--background {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.container_resto_prev__list--background i {
+  opacity: 0;
+}
+.container_resto_prev__list--background .price {
   font-family: robotobold;
   font-size: 0.9em;
   position: absolute;
   right: 0px;
   bottom: 12px;
   margin-right: 20px;
+  transition: all 0.5s ease-in-out;
 }
-
-/*ANIMATIONS SUR LES PAGES MENU*/
-/*ANIMATION CHECK = ICONE DE VALIDATION QUI APPARAIT AU SURVOL DU PLAT*/
-@keyframes check {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 65px;
-  }
+.container_resto_prev__list--background h6 {
+  font-family: robotoregular;
+  font-weight: normal;
+  font-size: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 400px;
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 80%;
+  transition: all 0.5s ease-in-out;
 }
-@keyframes check2 {
-  0% {
-    width: 80%;
-  }
-  100% {
-    width: 60%;
-  }
+.container_resto_prev__list--background .description p {
+  font-family: robotothin;
+  font-size: 1.1em;
+  width: 80%;
+  margin-right: 5px;
+  margin-bottom: -10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+  transition: all 0.5s ease-in-out;
 }
-.container_resto_prev__list--background {
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  cursor: pointer;
+.container_resto_prev__list--background li.anim_check {
+  opacity: 1;
+  width: 0px;
+  transition: all 0.5s ease-in-out;
 }
 .container_resto_prev__list--background:hover .price {
   transform: translateX(-70px);
-  transition: transform 0.5s ease-in-out;
 }
 .container_resto_prev__list--background:hover li.anim_check {
   opacity: 1;
-  animation: check 0.5s ease-in-out;
-  animation-fill-mode: forwards 2s;
+  width: 65px;
 }
 .container_resto_prev__list--background:hover i {
+  opacity: 1;
   transform: rotate(-360deg);
   transition: transform 0.5s ease-in-out;
   animation-delay: 0.6s;
 }
 .container_resto_prev__list--background:hover h6 {
-  animation: check2 0.5s;
+  width: 60%;
+  animation-fill-mode: forwards;
 }
 .container_resto_prev__list--background:hover .description p {
-  animation: check2 0.5s;
+  width: 60%;
+  animation-fill-mode: forwards;
 }
 
-/*ANIMATION FADEIN = LIGNES QUI APPARAISSENT À L'OUVERTURE DE LA PAGE*/
+/*ANIMATION FADEIN = LIGNES QUI APPARAISSENT À L'OUVERTURE DE LA PAGE MENU*/
 @keyframes fadein {
   from {
     opacity: 0;

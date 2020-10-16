@@ -36,123 +36,128 @@
 }
 
 @font-face {
-  font-family: 'Shrikhand-Regular';
-  src: url('../typo/Shrikhand/Shrikhand-Regular.eot') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Shrikhand-Regular';
+    src: url('../typo/Shrikhand/Shrikhand-Regular.eot');
+    src: url('../typo/Shrikhand/Shrikhand-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../typo/Shrikhand/Shrikhand-Regular.otf') format('otf'),
+         url('../typo/Shrikhand/Shrikhand-Regular.woff') format('woff'),
+         url('../typo/Shrikhand/Shrikhand-Regular.ttf') format('truetype'),
+         url('../typo/Shrikhand/Shrikhand-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FontAwesome"; 
+    src: url("../fonts/fontawesome-webfont.eot?v=4.4.0"); 
+    src: url("../fonts/fontawesome-webfont.eot #iefix&v=4.4.0") format("embedded-opentype"), 
+    url("../fonts/fontawesome webfont.woff2?v=4.4.0") format("woff2"), 
+    url("../fonts/fontawesome webfont.woff?v=4.4.0") format("woff"), 
+    url("../fonts/fontawesome webfont.ttf?v=4.4.0") format("truetype"), 
+    url("../fonts/fontawesome webfont.svg?v=4.4.0#fontawesomeregular") format("svg"); 
+    font-weight: normal; 
+    font-style: normal;
 }
 
 /*///////TITRES///////*/
 
-h1
-{font-family:Shrikhand-Regular;
-font-size: 1.8em;
-font-weight: lighter;
-@media (min-width: 768px)
-{font-size:2.5em;}
+h1 {
+    font-family:Shrikhand-Regular;
+    font-size: 1.8em;
+    font-weight: lighter;
+        @media (min-width: 768px){
+            font-size:2.5em;
+        }
+
 }
 
 h2{
-font-family: robotobold;
-font-size: 1.4em;
-margin-top: 30px;
-margin-bottom: 10px;
-margin-left: 15px;
-text-align: left;
+    font-family: robotobold;
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    text-align: left;
+    font-weight: normal;
 }
 
-.section_fonctionnement h2
-{ 
-@media (min-width: 768px)
-{margin-left: auto;
-margin-right:auto;}}
+.section_fonctionnement h2{ 
+    @media (min-width: 768px){
+        margin-left: auto;
+        margin-right:auto;
+        }
+}
 
-.container_resto_prev h2
-{ 
-@media (min-width: 768px)
-{margin-left: auto;
-margin-right:auto;}}
+.container_resto_prev h2{ 
+    @media (min-width: 768px){
+        margin-left: auto;
+        margin-right:auto;
+        }
+}
 
 h3{
-font-family: robotoregular;
-line-height: 0px;
+    font-family: robotoregular;
+    line-height: 0px;
+    font-weight:normal;
 }
 
-h4
-{font-family:robotothin;
-font-size:1em;
-margin-left: 15px;
-margin-bottom: 10px;
-@media (min-width: 768px)
-{margin-left: 200px;
-margin-right: 200px;
-font-size:1.5em;}
-@media (min-width:992px)
-{margin-left:300px;
-margin-right:300px;}
+h4{
+    font-family:robotothin;
+    font-weight:normal;
+    font-size:1em;
+    margin-left: 15px;
+    margin-bottom: 10px;
+        @media (min-width: 768px){
+            margin-left: 200px;
+            margin-right: 200px;
+            font-size:1.5em;
+            }
+        @media (min-width:992px){
+            margin-left:300px;
+            margin-right:300px;
+            }
 }
 
 h5{ 
-font-family: Shrikhand-Regular;
-color:$white;
-font-size: 1.2em;
-margin-left: 15px;
-font-weight: lighter;
-}
-
-h6 {font-family:robotoregular;
-    font-size:1.2em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width:400px;
-    text-align: left;
+    font-family: Shrikhand-Regular;
+    color:$white;
+    font-size: 1.2em;
     margin-left: 15px;
-     margin-right: 15px;
-     margin-top:5px;
-     margin-bottom:5px;
-    }
-
-.description p
-{font-family:robotothin;
-    font-size:1.1em;
-    width:80%;
-    margin-right:5px;
-    margin-bottom: -10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;}
+    font-weight: lighter;
+}
 
 /*///////PARAGRAPHES///////*/
 
 p{
-font-family: robotothin;
-margin: 0em;
+    font-family: robotothin;
+    margin: 0em;
 }
 
-.section_discover p
-{text-align: center;
-font-size:1em; 
-line-height: normal;
-word-wrap: break-word;
-padding-right: 15px;
-padding-left: 15px;;
-padding-bottom: 15px;
-    }
+.section_discover p{
+    text-align: center;
+    font-size:1em; 
+    line-height: normal;
+    word-wrap: break-word;
+    padding-right: 15px;
+    padding-left: 15px;;
+    padding-bottom: 15px;
+}
 
-.container_resto_prev__list h3,p
-{font-size:1.2em;
-text-align: left;
-margin-left: 15px;
- margin-right: 15px;
-    }
+.container_resto_prev__list h3,p{
+    font-size:1.2em;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
-.container_resto_prev__list p
-{padding-bottom: 20px;}
+.container_resto_prev__list p{
+    padding-bottom: 20px;
+}
 
-.section_localisation p
-{font-family: robotoregular;
-font-size:1em; 
-text-align: center;
-margin-top: 20px;
-margin-bottom: 20px;}
+.section_localisation p{
+    font-family: robotoregular;
+    font-size:1em; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
