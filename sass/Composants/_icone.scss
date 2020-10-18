@@ -56,6 +56,7 @@ header i {
         background: linear-gradient(0deg, $secondaire 0%, $primaire 10%, $white 0%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        
     }
     20% {
         background: linear-gradient(0deg, $secondaire 0%, $primaire 20%, $white 10%);
@@ -86,6 +87,7 @@ header i {
         background: linear-gradient(0deg, $secondaire 0%, $primaire 70%, $white 60%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        
     }
     80% {
         background: linear-gradient(0deg, $secondaire 0%, $primaire 80%, $white 70%);
