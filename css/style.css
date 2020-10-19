@@ -584,7 +584,7 @@ header {
   }
 }
 .loader_p {
-  font-family: shrikhand;
+  font-family: Shrikhand-Regular;
   color: #FFF;
   font-size: 1.4em;
   text-align: center;
@@ -631,6 +631,7 @@ header {
 .container_resto_prev__list--background {
   background-color: #FFFFFF;
   border-radius: 20px;
+  opacity: 0;
   overflow: hidden;
   cursor: pointer;
 }
@@ -715,21 +716,25 @@ header {
 .appear1 {
   animation: fadein 1s ease-in-out;
   animation-delay: 200ms;
+  animation-fill-mode: forwards;
 }
 
 .appear2 {
-  animation: fadein 1.1s ease-in-out;
-  animation-delay: 300ms;
+  animation: fadein 1s ease-in-out;
+  animation-delay: 250ms;
+  animation-fill-mode: forwards;
 }
 
 .appear3 {
-  animation: fadein 1.2s ease-in-out;
-  animation-delay: 400ms;
+  animation: fadein 1.1s ease-in-out;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 
 .appear4 {
-  animation: fadein 1.3s ease-in-out;
-  animation-delay: 500ms;
+  animation: fadein 1.2s ease-in-out;
+  animation-delay: 350ms;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
