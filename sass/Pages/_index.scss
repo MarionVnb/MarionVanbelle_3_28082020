@@ -75,7 +75,7 @@
               /*ANIMATION LOADER*/
 
 .home-loader{
-    background-color:#99E2D0;
+    background-color: $tertiaire;
     align-items:center;
     position:fixed;
     z-index:9999;
@@ -133,7 +133,7 @@
     height: 100%;
     border-radius: 100%;
     border: 10px solid transparent;
-    border-top-color: #99E2D0;
+    border-top-color: $tertiaire;
 }
 
 .loader-1:before{
@@ -142,7 +142,7 @@
 }
 
 .loader-1:after{
-    border: 10px solid #FFF;
+    border: 10px solid $white;
 }
 
 @keyframes spin{
@@ -152,7 +152,7 @@
 
 .loader_p{
     font-family:Shrikhand-Regular;
-    color:#FFF;
+    color:$white;
     font-size:1.4em;
     text-align:center;
     padding-top:50px;
