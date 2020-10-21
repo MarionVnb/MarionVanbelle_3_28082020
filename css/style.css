@@ -53,6 +53,8 @@ h1 {
   font-family: Shrikhand-Regular;
   font-size: 1.8em;
   font-weight: lighter;
+  color: #000000;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   h1 {
